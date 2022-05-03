@@ -1,3 +1,6 @@
+## JavaScript Array Cardio Practice - Day 1 — #JavaScript30 4/30
+### https://www.youtube.com/watch?v=HB1ZC7czKRs
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
