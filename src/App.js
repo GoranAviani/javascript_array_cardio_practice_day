@@ -67,7 +67,12 @@ function App() {
 
      // 7. sort Exercise
     // Sort the people alphabetically by last name
-        const result7 = people.sort()
+        const result7 = people.sort( (person1, person2) => {
+            const [person1Last, person1First] = person1.split(", ")
+            const [person2Last, person2First] = person2.split(", ")
+            return (person1Last < person2Last ? 1: -1)
+        })
+    console.log("res7")
     console.log(result7)
 
 
