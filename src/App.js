@@ -65,6 +65,12 @@ function App() {
     const result6 = people.filter(person => person.includes('de'))
     console.log(result6)
 
+     // 7. sort Exercise
+    // Sort the people alphabetically by last name
+
+
+
+
     return (
         <div>
             {displayResult1}
