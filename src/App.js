@@ -26,6 +26,11 @@ function App() {
     const result2 = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
     console.table(result2)
 
+        // Array.prototype.sort()
+    // 3. Sort the inventors by birthdate, oldest to youngest
+
+
+
   return (
    <div>
    APP
