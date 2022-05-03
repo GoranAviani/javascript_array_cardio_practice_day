@@ -67,7 +67,8 @@ function App() {
 
      // 7. sort Exercise
     // Sort the people alphabetically by last name
-
+        const result7 = people.sort()
+    console.log(result7)
 
 
 
