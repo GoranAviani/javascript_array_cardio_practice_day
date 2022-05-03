@@ -61,6 +61,7 @@ function App() {
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+    // change to person array
 
     return (
         <div>
