@@ -51,6 +51,9 @@ function App() {
 
         // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
+    const initialState = 0
+    const result4 = inventors.reduce((previousValue, currentValue)=> previousValue + (currentValue.passed - currentValue.year), initialState)
+    console.log(result4)
 
     return (
         <div>
