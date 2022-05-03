@@ -55,6 +55,8 @@ function App() {
     console.log(result4)
 
     // 5. Sort the inventors by years lived
+    const result5 = inventors.sort((prevInventor, currInventor) => (prevInventor.passed - prevInventor.year) > (currInventor.passed - currInventor.year) ? 1: -1)
+    console.table(result5)
 
 
     return (
