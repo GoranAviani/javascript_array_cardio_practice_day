@@ -31,6 +31,8 @@ function App() {
     const result3 = inventors.sort((first, second) => first.year > second.year ? 1: -1)
     console.table(result3)
 
+        // Array.prototype.reduce()
+    // 4. How many years did all the inventors live?
 
     return (
         <div>
