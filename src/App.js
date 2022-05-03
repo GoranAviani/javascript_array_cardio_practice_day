@@ -55,6 +55,10 @@ function App() {
     const result4 = inventors.reduce((sumOfValues, currentValue)=> sumOfValues + (currentValue.passed - currentValue.year), initialState)
     console.log(result4)
 
+
+        // 5. Sort the inventors by years lived
+
+
     return (
         <div>
             {displayResult1}
