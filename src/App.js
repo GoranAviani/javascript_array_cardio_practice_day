@@ -28,6 +28,8 @@ function App() {
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    const result3 = inventors.sort((first, second) => first.year > second.year ? 1: -1)
+    console.table(result3)
 
 
     return (
