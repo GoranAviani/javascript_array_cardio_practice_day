@@ -12,23 +12,22 @@ const inventors = [
     {first: 'Lise', last: 'Meitner', year: 1878, passed: 1968},
     {first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909}
 ];
-    const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
+const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
 
-   const morePeople = [
-      { name: 'Dante', year: 1988 },
-      { name: 'Randall', year: 1987 },
-      { name: 'Bob', year: 1944 },
-      { name: 'Jay', year: 2016}
-    ];
+const morePeople = [
+    {name: 'Dante', year: 1988},
+    {name: 'Randall', year: 1987},
+    {name: 'Bob', year: 1944},
+    {name: 'Jay', year: 2016}
+];
 
-   const comments = [
-      { text: 'There was salt on the glass, BIG grains of salt', id: 293847 },
-      { text: 'A schooner is a sailboat', id: 189820 },
-      { text: 'Do ya like dogs?', id: 123900 },
-      { text: "I wasn't even supposed to be here today", id: 37 },
-      { text: 'Luminous beings we are, not this crude matter', id: 823423 }
-    ];
-
+const comments = [
+    {text: 'There was salt on the glass, BIG grains of salt', id: 293847},
+    {text: 'A schooner is a sailboat', id: 189820},
+    {text: 'Do ya like dogs?', id: 123900},
+    {text: "I wasn't even supposed to be here today", id: 37},
+    {text: 'Luminous beings we are, not this crude matter', id: 823423}
+];
 
 
 function App() {
@@ -46,17 +45,16 @@ function App() {
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
-    const result3 = inventors.sort((first, second) => first.year > second.year ? 1: -1)
+    const result3 = inventors.sort((first, second) => first.year > second.year ? 1 : -1)
     console.table(result3)
 
-        // Array.prototype.reduce()
+    // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
     const initialState = 0
-    const result4 = inventors.reduce((sumOfValues, currentValue)=> sumOfValues + (currentValue.passed - currentValue.year), initialState)
+    const result4 = inventors.reduce((sumOfValues, currentValue) => sumOfValues + (currentValue.passed - currentValue.year), initialState)
     console.log(result4)
 
-
-        // 5. Sort the inventors by years lived
+    // 5. Sort the inventors by years lived
 
 
     return (
