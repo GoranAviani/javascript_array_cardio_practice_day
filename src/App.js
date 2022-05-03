@@ -72,6 +72,7 @@ function App() {
             const [person2Last, person2First] = person2.split(", ")
             return (person1Last < person2Last ? 1: -1)
         })
+
     console.log("res7")
     console.log(result7)
 
