@@ -21,6 +21,11 @@ function App() {
         const result1 = inventors.filter(inventor => inventor.year > 1500 && inventor.year <1600)
         console.table(result1)
 
+        // Array.prototype.map()
+    // 2. Give us an array of the inventors' first and last names
+    const result2 = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
+    console.table(result2)
+
   return (
    <div>
    APP
