@@ -61,7 +61,9 @@ function App() {
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-    // change to person array
+    // change to people array
+    const result6 = people.filter(person => person.includes('de'))
+    console.log(result6)
 
     return (
         <div>
