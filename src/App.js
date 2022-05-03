@@ -55,8 +55,26 @@ function App() {
     console.log(result4)
 
     // 5. Sort the inventors by years lived
-    const result5 = inventors.sort((prevInventor, currInventor) => (prevInventor.passed - prevInventor.year) > (currInventor.passed - currInventor.year) ? 1: -1)
+    const result5 = inventors.sort((prevInventor, currInventor) => (prevInventor.passed - prevInventor.year) > (currInventor.passed - currInventor.year) ? 1 : -1)
     console.table(result5)
+
+
+    // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+    // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+    // change to people array
+    const result6 = people.filter(person => person.includes('de'))
+    console.log(result6)
+
+    // 7. sort Exercise
+    // Sort the people alphabetically by last name
+    const result7 = people.sort((person1, person2) => {
+        const [person1Last, person1First] = person1.split(", ")
+        const [person2Last, person2First] = person2.split(", ")
+        return (person1Last < person2Last ? 1 : -1)
+    })
+
+    console.log("res7")
+    console.log(result7)
 
 
     return (
