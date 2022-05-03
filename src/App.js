@@ -21,6 +21,14 @@ const inventors = [
       { name: 'Jay', year: 2016}
     ];
 
+   const comments = [
+      { text: 'There was salt on the glass, BIG grains of salt', id: 293847 },
+      { text: 'A schooner is a sailboat', id: 189820 },
+      { text: 'Do ya like dogs?', id: 123900 },
+      { text: "I wasn't even supposed to be here today", id: 37 },
+      { text: 'Luminous beings we are, not this crude matter', id: 823423 }
+    ];
+
 
 
 function App() {
