@@ -89,6 +89,16 @@ function App() {
             res[dat] = 1
         }
     }
+
+    const initialState8 = {}
+    const result8 = data.reduce((sumObj, currentValue) => {
+    if (sumObj[currentValue]){
+        sumObj[currentValue] = sumObj[currentValue] +1
+    } else {
+        sumObj[currentValue] = 1
+    }
+    }, initialState8)
+
     console.log("res8")
     console.log(res)
 
