@@ -92,11 +92,12 @@ function App() {
 
     const initialState8 = {}
     const result8 = data.reduce((sumObj, currentValue) => {
-    if (sumObj[currentValue]){
+    if (currentValue in sumObj){
         sumObj[currentValue] = sumObj[currentValue] +1
     } else {
         sumObj[currentValue] = 1
     }
+    return sumObj
     }, initialState8)
 
     console.log("res8")
