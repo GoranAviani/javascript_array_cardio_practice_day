@@ -77,6 +77,34 @@ function App() {
     console.log(result7)
 
 
+    // 8. Reduce Exercise
+    // Sum up the instances of each of these
+    const data = ['car', 'tree', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+    const res = {}
+    for (const dat of data) {
+        if (dat in res) {
+            res[dat] = res[dat] + 1
+        } else {
+            res[dat] = 1
+        }
+    }
+
+    const initialState8 = {}
+    const result8 = data.reduce((sumObj, currentValue) => {
+    if (currentValue in sumObj){
+        sumObj[currentValue] = sumObj[currentValue] +1
+    } else {
+        sumObj[currentValue] = 1
+    }
+    return sumObj
+    }, initialState8)
+
+    console.log("res8")
+    console.log(res)
+    console.log(result8)
+
+
     return (
         <div>
             {displayResult1}
