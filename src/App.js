@@ -101,6 +101,7 @@ function App() {
 
     console.log("res8")
     console.log(res)
+    console.log(result8)
 
 
     return (
