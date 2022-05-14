@@ -77,21 +77,20 @@ function App() {
     console.log(result7)
 
 
-     // 8. Reduce Exercise
+    // 8. Reduce Exercise
     // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
 
     const res = {}
-    for(const dat of data){
-        if(dat in res){
-            res[dat] = res[dat] +1
-        }else{
+    for (const dat of data) {
+        if (dat in res) {
+            res[dat] = res[dat] + 1
+        } else {
             res[dat] = 1
         }
     }
     console.log("res8")
     console.log(res)
-
 
 
     return (
